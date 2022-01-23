@@ -19,10 +19,10 @@ var opMode string
 var roundCnt int
 
 type sectionData struct {
-	inFile    *os.File
-	outFile   *os.File
-	threads   int
-	blockCnt  int
+	inFile		*os.File
+	outFile		*os.File
+	threads		int
+	blockCnt	int
 	trimVal		int
 	remain		int
 }
