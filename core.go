@@ -112,16 +112,13 @@ func swap64Rev(dataBlock []uint64, swapVals []int) []uint64 {
 }
 
 func swapValGen (key []uint64) ([]int) {
-// hardcode this array
 	baseVals := make([]int, 64)
-	for i := 0; i < 64; i++ {
-		baseVals[i] = i
-	}
+	copy(baseVals, slotVals)
 	vals := make([]int, 64)
 	for i, v := range key {
 		slot := int(v % uint64(len(baseVals)))
 		vals[i] = baseVals[slot]
-		baseVals = spliceInt(baseVals,slot)
+		baseVals = spliceInt(baseVals, slot)
 	}
 	return vals
 }
