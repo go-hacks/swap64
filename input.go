@@ -105,5 +105,7 @@ func getPassphrase () string {
 func usage () {
 	fmt.Println("Operating modes are fwd and rev. Defaults to fwd unless file has .sp ext.")
 	fmt.Println("Thread count is optional (0-255) and defaults to 0 which uses number of CPUs.")
+	fmt.Println("Rounds default to 7 but can be set to anything you want HOWEVER this value")
+	fmt.Println("is currently NOT stored and MUST be specified @ encryption AND decryption time.")
 	return
 }
