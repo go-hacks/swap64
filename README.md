@@ -32,5 +32,5 @@ is not stored in the file anywhere so you MUST specify
 it at encryption AND decryption time.
 
 Note: There is no hash checking of the passphrase so you
-can decrypt with any passphrase you like and will process
+can decrypt with any passphrase you like and it will process
 the file but you will end up with a binary blob of nothing. XD
