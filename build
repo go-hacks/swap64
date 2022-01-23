@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 go get "golang.org/x/term"
 go get "github.com/DavidGamba/go-getoptions"
 go build -o swap64 *.go
