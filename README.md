@@ -27,9 +27,9 @@ You can specify threads with -t/--threads otherwise
 it will default to 0 which uses the number of CPUs.
 
 The number of rounds per block can also be specified via
--r/--rounds but be aware that this value is not stored
-in the file anywhere so you MUST specify it at
-encryption AND decryption time.
+-r/--rounds (defaults to 7) but be aware that this value
+is not stored in the file anywhere so you MUST specify
+it at encryption AND decryption time.
 
 Note: There is no hash checking of the passphrase so you
 can decrypt with any passphrase you like and will process
