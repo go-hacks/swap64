@@ -1,9 +1,9 @@
 # swap64
 ## Multi-threaded, scalable, x64 CBC 4096-bit block cipher that performs 7 rounds per block w/ an NLFSR key schedule, key dependant movements, and a 512-bit OTP key seed masked w/ passphrase hash.
 
-Currently, this only works on Linux as it uses /dev/random
-for seeding but I will probably update this to crypto-rand
-later so that it works on all OSs.
+Currently, this only works on Linux(Maybe Mac) as it uses
+/dev/random for seeding but I will probably update this
+to crypto-rand later so that it works on all OSs.
 
 Build with
 ``` sh
